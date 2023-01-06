@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,53 @@
     <link rel="stylesheet" href="css/main.css">
     <title>tailwind CSS</title>
 </head>
-<body>
-<!-- nav bar -->
-<nav class="relative container mx-auto p-6">
-    <!-- flex container -->
-    <div class="flex items-center justify-between">
-        <!-- logo -->
-        <div class="pt-2">
-            <img src="./images/logo.svg" alt="logo">
+
+<body class="mx-100">
+    <!-- nav bar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- flex container -->
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div class="pt-2">
+                <img src="./images/logo.svg" alt="logo">
+            </div>
+            <!-- menu  -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+                <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Career</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+            </div>
+            <!-- buttons -->
+            <a href="#"
+                class="hidden md:block p-3 p3-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get
+                Started</a>
         </div>
-        <!-- menu  -->
-        <div class="flex space-x-6">
-            
+    </nav>
+
+
+    <!-- hero section  -->
+    <section id="hero">
+        <!-- flex container  -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+            <!-- left items  -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+             <div class="h1 max-w-md text-4xl font-bold text-left md:text-5xl md:textleft ">Bring everyone together to build better broducts</div>
+
+             <div class="p max-w-md text-sm font-normal text-center md:text-left pl-7 ">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</div>
+            </div>
+
+            <!-- right items  -->
+            <div>
+
+
+            </div>
+
+
         </div>
-        
-    </div>
-</nav>
+    </section>
+
 </body>
+
 </html>
