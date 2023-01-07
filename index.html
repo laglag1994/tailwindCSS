@@ -9,60 +9,164 @@
     <title>tailwind CSS</title>
 </head>
 
-<body>
+<body style="background-image: url('./images/bg-tablet-pattern.svg');">
 
-    <div class="main px-20 bg-header-bg bg-transparent">
-        <!-- nav bar -->
-        <nav class="relative container mx-auto p-6">
-            <!-- flex container -->
-            <div class="flex items-center justify-between">
-                <!-- logo -->
-                <div class="pt-2">
-                    <img src="./images/logo.svg" alt="logo">
+
+    <div class="mx-20 px-10">
+
+        <div class="h-full w-full bg-no-repeat bg-rotate-1 ">
+            <!-- nav bar -->
+            <nav class="relative container mx-auto p-6">
+                <!-- flex container -->
+                <div class="flex items-center justify-between">
+                    <!-- logo -->
+                    <div class="pt-2">
+                        <img src="./images/logo.svg" alt="logo">
+                    </div>
+                    <!-- menu  -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                        <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+                        <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+                        <a href="#" class="hover:text-darkGrayishBlue">Career</a>
+                        <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+                    </div>
+                    <!-- buttons -->
+                    <a href="#"
+                        class="hidden md:block p-3 p3-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight ">Get
+                        Started</a>
                 </div>
-                <!-- menu  -->
-                <div class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-                    <a href="#" class="hover:text-darkGrayishBlue">Product</a>
-                    <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-                    <a href="#" class="hover:text-darkGrayishBlue">Career</a>
-                    <a href="#" class="hover:text-darkGrayishBlue">Community</a>
-                </div>
-                <!-- buttons -->
-                <a href="#"
-                    class="hidden md:block p-3 p3-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight ">Get
-                    Started</a>
-            </div>
-        </nav>
+            </nav>
 
 
-        <!-- hero section  -->
-        <section id="hero">
-            <!-- flex container  -->
-            <div
-                class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
-                <!-- left items  -->
-                <div class="flex flex-col mb-3 space-y-12 md:w-1/2 py-11 ">
-                    <div class="h1 max-w-md text-4xl font-bold text-left md:text-5xl md:textleft ">Bring everyone
-                        together to build better broducts</div>
+            <!-- hero section  -->
+            <section id="hero">
+                <!-- flex container  -->
+                <div
+                    class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+                    <!-- left items  -->
+                    <div class="flex flex-col mb-3 space-y-12 md:w-1/2 py-11 ">
+                        <div class="h1 max-w-md text-4xl font-bold text-left md:text-5xl md:textleft text-darkBlue ">
+                            Bring
+                            everyone
+                            together to build better broducts</div>
 
-                    <div class="p max-w-md text-md font-normal text-center md:text-left text-darkGrayishBlue ">Manage makes it simple
-                        for software teams<br> to plan day-to-day tasks while keeping the<br> larger team goals in view.</div>
+                        <div
+                            class="p max-w-md text-md font-normal text-center md:text-left text-darkGrayishBlue text-xl ">
+                            Manage
+                            makes it simple
+                            for software teams<br> to plan day-to-day tasks while keeping the<br> larger team goals in
+                            view.
+                        </div>
 
                         <a href="#"
-                        class=" p-3 p3-6 pt-2 w-1/4 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight text-center" >Get
-                        Started</a>
+                            class=" p-3 p3-6 pt-2 w-1/4 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight text-center">Get
+                            Started</a>
+
+                    </div>
+
+                    <!-- right items  -->
+                    <div class="">
+                        <img src="./images/illustration-intro.svg">
+                    </div>
+
 
                 </div>
+            </section>
+        </div>
 
-                <!-- right items  -->
-                <div class="">
-                    <img src="./images/illustration-intro.svg">
+
+        <!-- about section  -->
+        <section id="about">
+            <div
+                class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+
+                <!-- left about  -->
+                <div class="flex flex-col mb-3 space-y-12 md:w-1/2 py-11 ">
+                    <div class="h1 text-darkBlue text-4xl font-bold">What’s different about<br> Manage?</div>
+
+                    <div class="p max-w-md text-md font-normal text-center md:text-left text-darkGrayishBlue text-xl">
+                        Manage provides all the functionality your<br> team needs, without
+                        the complexity. Our<br> software is tailor-made for modern digital <br>
+                        product teams. </div>
                 </div>
 
+                <!-- right about  -->
+                <div class="flex flex-col mb-3 space-y-12 md:w-1/2 py-11">
+                    <!-- one  -->
+                    <div class="flex flex-row mb-3 space-x-6 ">
+                        
+                        <div class="p-3 p3-6 pt-2 w-1/4 h-1/3 text-white bg-brightRed rounded-full baselin text-center">
+                            01
+                        </div>
+                        <div>
+                            <div class="h3  text-darkBlue text-lg font-bold ">Track company-wide progress</div>
+                            <div class=" text-darkGrayishBlue "> See how your day-to-day tasks fit into the wider vision. Go from
+                                tracking progress at the milestone level all the way done to the
+                                smallest of details. Never lose sight of the bigger picture again.</div>
+                        </div>
+
+                        
+                    </div>
+
+
+                    <!-- two  -->
+                    <div class="flex flex-row mb-3 space-x-6 ">
+                        
+                        <div class="p-3 p3-6 pt-2 w-1/4 h-1/3 text-white bg-brightRed rounded-full baselin text-center">
+                            02
+                        </div>
+                        <div>
+                            <div class="h3  text-darkBlue text-lg font-bold ">Track company-wide progress</div>
+                            <div class=" text-darkGrayishBlue "> See how your day-to-day tasks fit into the wider vision. Go from
+                                tracking progress at the milestone level all the way done to the
+                                smallest of details. Never lose sight of the bigger picture again.</div>
+                        </div>
+
+                        
+                    </div>
+
+
+                    <!-- three -->
+                    <div class="flex flex-row mb-3 space-x-6 ">
+                        
+                        <div class="p-3 p3-6 pt-2 w-1/4 h-1/3 text-white bg-brightRed rounded-full baselin text-center">
+                            03
+                        </div>
+                        <div>
+                            <div class="h3  text-darkBlue text-lg font-bold ">Track company-wide progress</div>
+                            <div class=" text-darkGrayishBlue"> See how your day-to-day tasks fit into the wider vision. Go from
+                                tracking progress at the milestone level all the way done to the
+                                smallest of details. Never lose sight of the bigger picture again.</div>
+                        </div>
+
+                        
+                    </div>
+
+
+                </div>
 
             </div>
         </section>
+
+
+        <!-- profiles  -->
+        <section class="mt-14">
+            <div class="text-center font-bold text-3xl text-darkBlue">What they’ve said</div>
+
+            <!-- users  -->
+            <div class="flex flex-row  pt-3">
+                <!-- user 1  -->
+                <div class="flex flex-col gap-4 text-center ">
+                    <div> <img src="./images/avatar-anisha.png" alt="avatar-anisha" width="100"></div>
+                    <div class="h1 text-darkBlue font-bold text-xl ">Anisha Li</div>
+                    <div>“Manage has supercharged our team’s workflow. The<br> ability to maintain visibility on larger milestones at all times<br> keeps everyone motivated.”</div>
+                </div>
+            </div>
+
+        </section>
+
+
 
     </div>
 </body>
