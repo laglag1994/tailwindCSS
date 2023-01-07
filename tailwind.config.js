@@ -9,6 +9,12 @@ module.exports = {
       xl: '1440px'
     },
     extend: {
+
+      backgroundImage: {
+        headerBg: "url('./images/bg-simplify-section-desktop.svg')",
+        footerBg: "url('./images/bg-tablet-pattern.svg')",
+       },
+
       colors:{
         brightRed:'hsl(12,88%,59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',
